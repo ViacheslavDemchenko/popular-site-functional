@@ -1,0 +1,137 @@
+html,
+body {
+	margin: 0;
+	font-family: 'Arial', 'Tahoma', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.container-fluid .container {
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.container .popular {
+	padding: 100px 0 100px 0;
+	overflow: hidden;
+}
+
+.popular .popular-img-wrap {
+	width: 538px;
+	float: left;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.popular .popular-slider-wrap {
+    float: right;
+    width: 582px;
+}
+
+.popular-slider-wrap .slider__title {
+	position: relative;
+	margin: 0;
+	padding-bottom: 10px;
+	display: block;
+	font-size: 27px;
+}
+
+.popular-slider-wrap .slider__title::after,
+.popular-slider-wrap .slider__title::before {
+    position: absolute;
+    content: "";
+}
+
+.popular-slider-wrap .slider__title::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.popular-slider-wrap .slider__title::before {
+    z-index: 100;
+    bottom: -2px;
+    right: 477px;
+    width: 105px;
+    height: 4px;
+    background-color: #f8de15;
+}
+
+.popular-slider-wrap .slider {
+	margin: 20px 0 0 0;
+}
+
+.slider .slide {
+	padding-left: 100px;
+	outline: none;
+}
+
+.slide .accordion {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slide .slide__title {
+	position: relative;
+	width: 420px;
+	display: inline-block;
+	margin-top: 20px;
+    font-weight: 300;
+    font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.slide .slide__title span {
+	outline: none;
+	border-bottom: 1px dotted #000;
+}
+
+.slide .slide__title::before {
+	position: absolute;
+	content: "";
+	top: 3px;
+	left: -36px;
+	height: 15px;
+	width: 15px;
+	background-color: #000;
+}
+
+.slide .slide__title.open::before {
+    transform: rotate(-45deg);
+}
+
+.slide .slide__title:hover {
+	border-bottom: none;
+}
+
+.slide .slide__text {
+	display: none;
+	padding-left: 50px;
+	font-size: 14px;
+	font-weight: 300px;
+	line-height: 25px;
+	color: #757575;
+}
